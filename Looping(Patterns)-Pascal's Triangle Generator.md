@@ -27,9 +27,26 @@ To write a Python program that generates **Pascal's Triangle** using numbers. Th
 ---
 
 ## 🧪 Program
-Add Code Here
+```
+rows = int(input())
+coef = 1
+
+for i in range(1, rows+1):
+    for space in range(1, rows-i+1):
+        print(" ",end="")
+    for j in range(0, i):
+        if j==0 or i==0:
+            coef = 1
+        else:
+            coef = coef * (i - j)//j
+        print(coef, end = " ")
+    print()
+```
 
 ## Sample Output
 
-## Result
+<img width="611" height="683" alt="Screenshot 2025-11-24 132530" src="https://github.com/user-attachments/assets/1feb811d-de3b-4e61-94cb-7c4a290c8cdd" />
 
+
+## Result
+Thus,the Python program that defines a lambda function which takes two arguments a , b and c, and returns their sum is created successfully.
